@@ -24,8 +24,8 @@ public class Plane extends Vehicle implements Flyable{
                 "transportsPassengers=" + transportsPassengers() +
                 ", priceAfterDiscounts=%.2f" +
                 ", speed="+getSpeed()+
-                ", engine=Engine"+getEngine().getSize()+
-                ", TAX_AMT"+getTAX_AMT()+
+                ", engine=Engine "+getEngine().getSize()+
+                ", TAX_AMT "+getTAX_AMT()+
                 '}',getPriceAfterDiscounts() );
     }
 

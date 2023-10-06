@@ -30,10 +30,10 @@ public class FlyingCar extends Vehicle implements Driveable,Flyable{
     public String toString() {
         return String.format(
                 "FlyingCar{transportsPassengers=" + transportsPassengers() +
-                ", priceAfterDiscounts=" +
+                ", priceAfterDiscounts= %.2f" +
                 ", speed="+getSpeed()+
-                ", engine=Engine"+getEngine().getSize()+
-                ", TAX_AMT"+getTAX_AMT()+
+                ", engine=Engine "+getEngine().getSize()+
+                ", TAX_AMT="+getTAX_AMT()+
                 '}', getPriceAfterDiscounts());
     }
 }
