@@ -9,7 +9,7 @@ public class Plane extends Vehicle implements Flyable{
     public void printVehicleType() {
     }
     @Override
-    public float getPriceAfterDiscounts() {
+    public float getPriceAfterTax() {
         return (1+TAX_AMT)*getPrice();
     }
 
@@ -26,7 +26,7 @@ public class Plane extends Vehicle implements Flyable{
                 ", speed="+getSpeed()+
                 ", engine=Engine "+getEngine().getSize()+
                 ", TAX_AMT "+getTAX_AMT()+
-                '}',getPriceAfterDiscounts() );
+                '}',getPriceAfterTax() );
     }
 
 }

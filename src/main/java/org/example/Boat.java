@@ -26,11 +26,11 @@ public class Boat extends Vehicle implements Driveable{
     }
 
     @Override
-    public float getPriceAfterDiscounts() {
+    public float getPriceAfterTax() {
         return (1+TAX_AMT)*getPrice();
     }
     public String toString(){
-        return String.format("This is a boat that has a speed of %d priced at %.2f taxed at %.2f total price of %.2f", getSpeed(), getPrice(), TAX_AMT, getPriceAfterDiscounts());
+        return String.format("This is a boat that has a speed of %d priced at %.2f taxed at %.2f total price of %.2f", getSpeed(), getPrice(), TAX_AMT, getPriceAfterTax());
     }
 
 }

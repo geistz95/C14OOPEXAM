@@ -40,6 +40,6 @@ public abstract class Vehicle extends Product{
         this.engine = engine;
     }
     public abstract void printVehicleType();
-    public abstract float getPriceAfterDiscounts();
+    public abstract float getPriceAfterTax();
 
 }

@@ -42,6 +42,8 @@ public class Main {
         //Step 4
         VehicleApp.sortAndPrintDriveableVehiclesBySpeed(list);
 
+        System.out.printf(car.formattedToString());
+
 
     }
 }

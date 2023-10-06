@@ -21,8 +21,12 @@ public class FlyingCar extends Vehicle implements Driveable,Flyable{
 
 
     @Override
-    public float getPriceAfterDiscounts() {
+    public float getPriceAfterTax() {
         return (1+TAX_AMT)*getPrice();
+    }
+
+    public String getFormattedPriceAfterTax(){
+        return String.format(".2f", getPriceAfterTax());
     }
 
 
@@ -34,6 +38,6 @@ public class FlyingCar extends Vehicle implements Driveable,Flyable{
                 ", speed="+getSpeed()+
                 ", engine=Engine "+getEngine().getSize()+
                 ", TAX_AMT="+getTAX_AMT()+
-                '}', getPriceAfterDiscounts());
+                '}', getPriceAfterTax());
     }
 }
