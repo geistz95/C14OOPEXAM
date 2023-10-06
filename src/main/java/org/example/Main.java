@@ -34,10 +34,11 @@ public class Main {
         VehicleApp.printListOfFlyableObjects(s);
 
         //Step 3
-        Map<Integer,String> passengerList = new HashMap<>();
+        HashMap<Integer,String> passengerList = new HashMap<>();
         passengerList.put(57,"wesley snipes");
         passengerList.put(007, "james bond");
-        VehicleApp.printPassengerNumbersOnly(passengerList);
+        Passenger passengers = new Passenger(passengerList);
+        VehicleApp.printPassengerNumbersOnly(passengers.getInfo());
 
         //Step 4
         VehicleApp.sortAndPrintDriveableVehiclesBySpeed(list);
