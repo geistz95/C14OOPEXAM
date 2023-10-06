@@ -25,8 +25,20 @@ public class Car extends Vehicle implements Driveable{
         return (1+totalTax)*getPrice();
     }
 
-    public String toString() {
+    public String formattedToString(){
         return String.format("This is a car that has a speed of %d priced at %.2f taxed at %.2f total price of %.2f", getSpeed(), getPrice(), totalTax, getPriceAfterDiscounts());
     }
 
+    @Override
+    public String toString() {
+        return "Car{" +
+                "numDoors=" + numDoors +
+                ", extraTax=" + extraTax +
+                ", totalTax=" + totalTax +
+                ", priceAfterDiscounts=" + getPriceAfterDiscounts() +
+                ", formattedToString='" + formattedToString() + '\'' +
+                ", price=" + getPrice() +
+                ", engine=" + getEngine() +
+                '}';
+    }
 }
