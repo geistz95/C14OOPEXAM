@@ -20,13 +20,13 @@ public class Plane extends Vehicle implements Flyable{
 
     @Override
     public String toString() {
-        return "Plane{" +
+        return String.format("Plane{" +
                 "transportsPassengers=" + transportsPassengers() +
-                ", priceAfterDiscounts=" + getPriceAfterDiscounts() +
+                ", priceAfterDiscounts=%.2f" +
                 ", speed="+getSpeed()+
                 ", engine=Engine"+getEngine().getSize()+
                 ", TAX_AMT"+getTAX_AMT()+
-                '}';
+                '}',getPriceAfterDiscounts() );
     }
 
 }
